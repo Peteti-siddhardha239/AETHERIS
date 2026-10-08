@@ -1,0 +1,43 @@
+{
+  "network": "hardhat",
+  "chainId": "31337",
+  "deployedAt": "2026-10-08T11:39:30.038Z",
+  "contracts": {
+    "AssetRegistry": "0x5FbDB2315678afecb367f032d93F642f64180aa3",
+    "RWAStablecoin": "0xe7f1725E7734CE288F8367e1Bb143E90bb3F0512",
+    "LendingVault": "0x0165878A594ca255338adfa4d48449f69242Eb8F",
+    "CrossChainReceiver": "0x0DCd1Bf9A1b36cE34237eEaFef220932846BCD82",
+    "Oracles": {
+      "RealEstate": "0x9fE46736679d2D9a65F0992F2272dE9f3c7fa6e0",
+      "Invoice": "0xCf7Ed3AccA5a467e9e704C703E8D87F634fB0Fc9",
+      "CarbonCredit": "0xDc64a140Aa3E981100a9becA4E685f962f0cF6C9",
+      "TreasuryBill": "0x5FC8d32690cc91D4c39d9d3abcBD16989F875707"
+    }
+  },
+  "riskProfiles": {
+    "REAL_ESTATE": {
+      "maxLtv": "70%",
+      "liquidationThreshold": "80%",
+      "liquidationBonus": "10%",
+      "borrowApr": "5.0%"
+    },
+    "INVOICE": {
+      "maxLtv": "60%",
+      "liquidationThreshold": "72%",
+      "liquidationBonus": "10%",
+      "borrowApr": "6.5%"
+    },
+    "CARBON_CREDIT": {
+      "maxLtv": "50%",
+      "liquidationThreshold": "65%",
+      "liquidationBonus": "12%",
+      "borrowApr": "8.0%"
+    },
+    "TREASURY_BILL": {
+      "maxLtv": "85%",
+      "liquidationThreshold": "90%",
+      "liquidationBonus": "5%",
+      "borrowApr": "3.5%"
+    }
+  }
+}
